@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package nqnlong1506.helloworld;
+
+option go_package = "helloworld";
+
+service Greeter {
+    rpc SayHello (Request) returns (Response) {}
+}
+
+message Request {
+    string name = 1;
+    string age = 2;
+}
+
+message Response {
+    string message = 1;
+}
